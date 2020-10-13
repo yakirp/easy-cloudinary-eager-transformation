@@ -3,7 +3,7 @@ This module allows you to work with async options on [Cloudinary](https://cloudi
 
 This gives you the option to run async option on the localhost, Docker, or any serverless function.
 
-The module utilizes PubNub](https://www.pubnub.com/) to link all the webhook from Cloudinary to a specific random channel in your code.
+The module utilizes [PubNub](https://www.pubnub.com/) to link all the webhook from Cloudinary to a specific random channel in your code.
 
 
 
