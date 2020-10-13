@@ -63,7 +63,6 @@ function eager(
 
     var pubnubListener = {
         status: function (statusEvent) {
-
             if (statusEvent.operation === "PNUnsubscribeOperation") {
                 pubnub.removeListener(pubnubListener)
                 pubnub.disconnect();
@@ -77,10 +76,29 @@ function eager(
 
             if (statusEvent.operation === "PNSubscribeOperation") {
                 switch (method) {
+                    case "upload":
+                    cloudinary.v2.uploader.upload(public_id, {
+                        eager_notification_url: pubnubUrl.replace("channel", channel),
+                        eager_async: true,
+                        notification_url : pubnubUrl.replace("channel", channel),
+                        resource_type: resource_type,
+                        type: type,
+                        eager: eagertransformation
+                    }, function (err, data) {
+                        
+                        if (err) {
+                            error = true;
+                            results = err;
+                            pubnub.unsubscribe({
+                                channels: [channel]
+                            });
+
+                        }
+                    });
+                    break;
                     case "multi":
                         multi_optios.async = true;
                         multi_optios.notification_url = pubnubUrl.replace("channel", channel);
-                        console.log(multi_optios)
 
                         cloudinary.v2.uploader.multi(tag, options, function (err, data) {
 
@@ -97,6 +115,7 @@ function eager(
 
 
                     case "explicit":
+
                         cloudinary.v2.uploader.explicit(public_id, {
                             eager_notification_url: pubnubUrl.replace("channel", channel),
                             eager_async: true,
@@ -104,6 +123,7 @@ function eager(
                             type: type,
                             eager: eagertransformation
                         }, function (err, data) {
+
                             if (err) {
                                 error = true;
                                 results = err;
@@ -121,20 +141,17 @@ function eager(
                         options.notification_url = pubnubUrl.replace("channel", channel);
                         options.resource_type = resource_type,
                             options.type = type,
-                            options.notification_url = "https://webhook.site/2315b070-d058-45b0-9915-aecc31e43bc3"
-                        console.log(options)
 
-                        cloudinary.v2.api.update(public_id, options, function (err, data) {
-                            console.log(err, data)
-                            if (err) {
-                                error = true;
-                                results = err;
-                                pubnub.unsubscribe({
-                                    channels: [channel]
-                                });
+                            cloudinary.v2.api.update(public_id, options, function (err, data) {
+                                 if (err) {
+                                    error = true;
+                                    results = err;
+                                    pubnub.unsubscribe({
+                                        channels: [channel]
+                                    });
 
-                            }
-                        });
+                                }
+                            });
                         break;
                 }
 
@@ -142,9 +159,7 @@ function eager(
         },
         message: function (msg) {
 
-            if (msg.message.eager && msg.message.eager[0].ignored) {
-
-            } else {
+            if (msg.message.eager && msg.message.eager[0].ignored) {} else {
                 results = msg.message;
                 pubnub.unsubscribe({
                     channels: [channel]
