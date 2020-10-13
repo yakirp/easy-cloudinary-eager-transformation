@@ -1,7 +1,18 @@
- 
+
+This module allows you to work with async options on [Cloudinary](https://cloudinary.com/) without the need for a backend component. 
+
+This gives you the option to run async option on the localhost, Docker, or any serverless function.
+
+The module utilizes PubNub](https://www.pubnub.com/) to link all the webhook from Cloudinary to a specific random channel in your code.
+
+
+
+
+
+
 ### Installation
 
-Please make sure to open a [Cloudinary](https://cloudinary.com/) account and [Pubnub](https://www.pubnub.com/) account, both has free plan.
+Please make sure to open a [Cloudinary](https://cloudinary.com/) account and [PubNub](https://www.pubnub.com/) account, both has free plan.
  
 ```sh
 npm install easy-cloudinary-eager-transformation
