@@ -1,10 +1,13 @@
 {
   "name": "easy-cloudinary-eager-transformation",
-  "version": "1.0.5",
+  "version": "1.0.7",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "url": "git@github.com:yakirp/easy-cloudinary-eager-transformation.git"
   },
   "author": "Yakir Perlin",
   "license": "ISC",
