@@ -1,0 +1,17 @@
+{
+  "name": "easy-cloudinary-eager-transformation",
+  "version": "1.0.5",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yakir Perlin",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^3.2.0",
+    "cloudinary": "^1.23.0",
+    "pubnub": "^4.29.8",
+    "uuid-v4": "^0.1.0"
+  }
+}
