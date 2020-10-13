@@ -7,21 +7,6 @@ var uuid = require('uuid-v4');
 var cld_settings;
 var pubnub_settings;
 
-/*
-exports.test = function () {
-    cloudinary.config(this.cld_settings);
-    cloudinary.v2.uploader.upload("https://res.cloudinary.com/yakir/video/upload/v1601404710/fb0nsv9mdhqahlbkhjiz.mp4", {
-            resource_type: "video",
-            moderation: "google_video_moderation:possible",
-           // notification_url : "https://webhook.site/2315b070-d058-45b0-9915-aecc31e43bc3"
-        },
-        function (error, result) {
-            console.log(error,result);
-        });
-
-}
-
-*/
 exports.config = function (cld, pubnub) {
     this.pubnub_settings = pubnub;
     this.cld_settings = cld;
