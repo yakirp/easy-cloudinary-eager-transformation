@@ -30,12 +30,11 @@ var cld = {
 easy_cld.config(cld, pubnub)
 
  
-easy_cld.eager(pubnub,cld, "public_id" ,"update", "image", "upload", {
-            background_removal: "cloudinary_ai:fine_edges"
-        }, function (err, data) {
-        
-        console.log(err,data)
-        })
+easy_cld.update("image_public_id" , "image", "upload", {
+        background_removal: "cloudinary_ai:fine_edges"
+    }, function (err, data) {
+        console.log(err, data)
+    });
         
 })
 ```
