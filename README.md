@@ -1,4 +1,6 @@
 
+### Highlights
+
 This module allows you to work with async options on [Cloudinary](https://cloudinary.com/) without the need for a backend component. 
 
 This gives you the option to run async option on the localhost, Docker, or any serverless function.
@@ -10,7 +12,7 @@ The module utilizes [PubNub](https://www.pubnub.com/) to link all the webhook fr
 
 
 
-### Installation
+### Install
 
 Please make sure to open a [Cloudinary](https://cloudinary.com/) account and [PubNub](https://www.pubnub.com/) account, both has free plan.
  
@@ -18,10 +20,10 @@ Please make sure to open a [Cloudinary](https://cloudinary.com/) account and [Pu
 npm install easy-cloudinary-eager-transformation
 ```
 
-## Code Examples
+## Usage
 ----
 
-#### Remove imgage background
+#### AI Background Removal
 
 ```js
 var easy_cld = require("easy-cloudinary-eager-transformation")
