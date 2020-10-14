@@ -48,7 +48,7 @@ easy_cld.update("image_public_id" , "image", "upload", {
 ```
 
 #### AI-based Video Preview
-Cloudinary offers [intelligent automatic generation of video previews](https://cloudinary.com/blog/auto_generate_video_previews_with_great_results_every_time)to give viewers a preliminary look at the most interesting content. 
+Cloudinary offers [intelligent automatic generation of video previews](https://cloudinary.com/blog/auto_generate_video_previews_with_great_results_every_time) to give viewers a preliminary look at the most interesting content. 
 
 ```js
 easy_cld.explicit("video_public_id" , "video", "upload", {
