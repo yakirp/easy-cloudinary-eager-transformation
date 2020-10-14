@@ -12,7 +12,6 @@
   "author": "Yakir Perlin",
   "license": "ISC",
   "dependencies": {
-    "async": "^3.2.0",
     "cloudinary": "^1.23.0",
     "pubnub": "^4.29.8",
     "uuid-v4": "^0.1.0"

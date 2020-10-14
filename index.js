@@ -1,5 +1,4 @@
 const cloudinary = require('cloudinary');
-const async = require("async");
 const PubNub = require('pubnub')
 var uuid = require('uuid-v4');
 
