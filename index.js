@@ -9,10 +9,14 @@ var pubnub_settings;
 exports.config = function (cld, pubnub) {
     this.pubnub_settings = pubnub;
     this.cld_settings = cld;
-
+    cloudinary.config(this.cld_settings);
 }
 
+exports.getCloudinary = cloudinary;
     
+ 
+
+
 exports.explicit = function (public_id, resource_type, type, eagertransformation, callback) {
     eager(this.cld_settings, this.pubnub_settings, public_id, "explicit", resource_type, type, eagertransformation, null, null, callback);
 }
@@ -159,7 +163,9 @@ function eager(
         },
         message: function (msg) {
 
-            if (msg.message.eager && msg.message.eager[0].ignored) {} else {
+            if (msg.message.eager && msg.message.eager[0].ignored) {//ignore? 
+            
+            } else {
                 results = msg.message;
                 pubnub.unsubscribe({
                     channels: [channel]
