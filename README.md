@@ -66,4 +66,7 @@ Author
 ------
 [**Yakir Perlin**](https://www.linkedin.com/in/yakirperlin/)
 
+License
+-------
+MIT License (Expat). See [LICENSE.md](LICENSE.md) for details.
 
