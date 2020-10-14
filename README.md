@@ -1,10 +1,9 @@
 
 ## Introduction
 
-This module allows you to work with async options on [Cloudinary](https://cloudinary.com/) without the need for a backend component Listening to Cloudisnry webhooks. 
+This module allows you to work with async options on [Cloudinary](https://cloudinary.com/) without the need for a backend component listening to Cloudinary webhooks. 
 
-This module utilizes [PubNub](https://www.pubnub.com/) to link all the webhook from Cloudinary to a specific random channel in your code.
-
+This module utilizes [PubNub](https://www.pubnub.com/) to link all webhooks from Cloudinary to a specific random channel in your code.
 
 ## Pre-requirements
 
@@ -15,7 +14,6 @@ Please make sure to open a [Cloudinary](https://cloudinary.com/) account and [Pu
 ```sh
 npm install easy-cloudinary-eager-transformation --save
 ```
-
 ## Configuration
 
 ```js
@@ -61,4 +59,11 @@ easy_cld.explicit("video_public_id" , "video", "upload", {
 ```
 
 ### APIs
+
+TBD
+
+Author
+------
+[**Yakir Perlin**](https://www.linkedin.com/in/yakirperlin/)
+
 

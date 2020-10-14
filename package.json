@@ -1,6 +1,6 @@
 {
   "name": "easy-cloudinary-eager-transformation",
-  "version": "1.0.17",
+  "version": "1.0.18",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,14 @@
     "url": "git@github.com:yakirp/easy-cloudinary-eager-transformation.git"
   },
   "author": "Yakir Perlin",
-  "license": "ISC",
+  "license": "MIT",
+  "keywords": [
+    "pubnub",
+    "cloudinary",
+    "video",
+    "ai",
+    "background removal"
+  ],
   "dependencies": {
     "cloudinary": "^1.23.0",
     "pubnub": "^4.29.8",
