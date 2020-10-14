@@ -1,11 +1,12 @@
 {
   "name": "easy-cloudinary-eager-transformation",
-  "version": "1.0.20",
+  "version": "1.0.21",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "repository": {
     "url": "git@github.com:yakirp/easy-cloudinary-eager-transformation.git"
   },
