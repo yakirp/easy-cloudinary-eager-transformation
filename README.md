@@ -68,5 +68,5 @@ Author
 
 License
 -------
-MIT License (Expat). See [LICENSE.md](LICENSE.md) for details.
+MIT License (Expat). See [LICENSE.md](https://github.com/yakirp/easy-cloudinary-eager-transformation/blob/main/LICENSE) for details.
 
