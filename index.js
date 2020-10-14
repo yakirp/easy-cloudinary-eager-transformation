@@ -12,6 +12,7 @@ exports.config = function (cld, pubnub) {
 
 }
 
+    
 exports.explicit = function (public_id, resource_type, type, eagertransformation, callback) {
     eager(this.cld_settings, this.pubnub_settings, public_id, "explicit", resource_type, type, eagertransformation, null, null, callback);
 }
