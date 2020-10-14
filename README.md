@@ -58,6 +58,18 @@ easy_cld.explicit("video_public_id" , "video", "upload", {
     });
 ```
 
+#### Google Automatic Video Tagging
+The [Google Automatic Video Tagging add-on](https://cloudinary.com/documentation/google_automatic_video_tagging_addon) integrates Google's automatic video tagging capabilities with Cloudinary's complete video management and manipulation pipeline. Google analyzes video data to automatically identify scenes and suggest tags.
+
+```js
+easy_cld.update("video_public_id" , "video", "upload", {
+        resource_type: "video",
+        categorization: "google_video_tagging"
+    }, function (err, data) {
+        console.log(err, data)
+});
+```
+
 ### APIs
 
 TBD
