@@ -7,7 +7,7 @@ This module utilizes [PubNub](https://www.pubnub.com/) to link all webhooks from
 
 ## Pre-requirements
 
-Please make sure to open a [Cloudinary](https://cloudinary.com/) account and [PubNub](https://www.pubnub.com/) account, both has free plan.
+Please make sure to open a [Cloudinary](https://cloudinary.com/) account and [PubNub](https://www.pubnub.com/) account; both have a free plan.
  
 ## Install
 
