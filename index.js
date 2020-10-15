@@ -176,10 +176,10 @@ function eager(
 
                         var options = eager_transformation;
                         options.notification_url = pubnubUrl.replace("channel", channel);
-                        options.resource_type = resource_type,
-                            options.type = type,
+                        options.resource_type = resource_type;
+                        options.type = type;
 
-                            cloudinary.v2.api.update(public_id, options, function (err, data) {
+                        cloudinary.v2.api.update(public_id, options, function (err, data) {
                                  if (err) {
                                     error = true;
                                     results = err;
